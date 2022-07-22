@@ -8,6 +8,7 @@
   --bg-card: #fff;
   --bg-blue: #d6e1ff;
   --bg-plan: #eaeffa;
+  --btn-hover: hsl(253, 89%, 75%);
   --fs-default: 16px;
   --fw-default: 500;
   --fw-bold: 700;
@@ -37,6 +38,8 @@ body {
 
 .container {
   width: 90vw;
+  max-width: 450px;
+  max-height: 660px;
   margin: 0 auto;
   background-color: var(--bg-card);
   border-radius: var(--border-radius);
@@ -65,12 +68,13 @@ body {
   text-align: center;
   font-weight: var(--fw-black);
   color: var(--dark-blue);
+  margin-top: calc(1rem + 1vw);
 }
 
 .order__text {
   text-align: center;
   line-height: 1.5;
-  padding: 0 0.5rem 0.7rem;
+  padding: 0 0.5rem 0.6rem;
   color: var(--desaturated-blue);
 }
 
@@ -79,9 +83,9 @@ body {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  border-radius: 0.5rem;
+  border-radius: 0.7rem;
   padding: 1rem 1rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1.8rem;
   background-color: var(--very-pale-blue);
 }
 
@@ -115,6 +119,12 @@ body {
   font-weight: var(--fw-bold);
   font-size: 0.8rem;
   text-underline-offset: 0.05rem;
+  transition: color 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.card__link:hover {
+  text-decoration: none;
+  color: var(--btn-hover);
 }
 
 .btn__payment,
@@ -128,6 +138,8 @@ body {
   display: block;
   border-radius: 0.8rem;
   border: none;
+  transition: background-color 0.3s cubic-bezier(0.25, 1, 0.5, 1),
+    color 0.3s cubic-bezier(0.25, 1, 0.5, 1);
 }
 
 .btn__payment {
@@ -135,10 +147,19 @@ body {
   background-color: var(--bright-blue);
 }
 
+.btn__payment:hover {
+  background-color: var(--btn-hover);
+}
+
 .btn__cancel {
   color: var(--desaturated-blue);
   background-color: var(--bg-card);
   font-weight: var(--fw-black);
+  margin-bottom: 2.5vw;
+}
+
+.btn__cancel:hover {
+  color: var(--dark-blue);
 }
 
 .sr-only {
@@ -150,4 +171,12 @@ body {
   overflow: hidden;
   padding: 0;
   position: absolute;
+}
+
+@media (min-width: 465px) {
+  .order,
+  .plan-card,
+  .buttons {
+    max-width: 366px;
+  }
 }
