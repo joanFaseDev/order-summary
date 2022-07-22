@@ -68,37 +68,10 @@ Here's how i'll proceed:
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- CSS Grid
-- Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-To see how you can add code snippets, see below:
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
+* How to hide content from users but not from screen readers using a precise combinaison of css properties (cf. style.css .sr-only). From what i understood, this method is limited to specific situations and i'm not quite sure this project is one of them. I used *section* elements and sections must have title. Unfortunately they can't appear on the card and yet they must be readable by assisting technologies (otherwise, that defeat the very purpose of using *section* element ). So i hid them but maybe i should'nt have used *section* in the first place. I'll try to ask others Frontend's members for specifics. 
 
 ### Continued development
 
