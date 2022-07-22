@@ -40,10 +40,28 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Project on GitHub](https://github.com/joanFaseDev/order-summary)
+- Live Site URL: [Project hosted through Vercel](https://order-summary-beryl.vercel.app/)
 
 ## My process
+
+### About me
+
+Hi everyone! I have to warn you about two things. First and foremost, english isn't my first language so please forgive me for any mispellings or grammatical errors. Secondly, i'm an aspiring front-end developper so i'm far from being the best learning material. Yet i'll do my best to explain my process, which choices i did and for what reasons. 
+
+### Analysis 
+
+The project is about recreating as closely as possible an order summary card based on two designs, a mobile and a desktop one. The layout inside the card doesn't change much between the two designs but the ratio height/width is clearly different. There's few elements inside, an image, some text, a tiny card about an annual plan and two buttons. 
+
+### Planning
+
+Here's how i'll proceed:
+
+ - Create a *main* element to act as a flexbox container.
+ - Create four *section* elements to act as flexbox items and also to enhance accessibility through semantic tag's use.
+ - Write all contents in HTML file then proceed to implement basic styling (font-size, body's padding and margin reset, colors) and css variables.
+ - Using flexbox properties, lay out the four main parts of the card (roughly distribute space and align items ) then work on smooth transition from mobile design to desktop one.
+ - Once the transition is satisfying, go in details and try to replicate as closely as possible the padding / margin of the  template.
 
 ### Built with
 
