@@ -69,7 +69,7 @@ Here's how i'll proceed:
 
 ### Continued development
 
-I wished to keep practicing using ems, rems and view units because in my mind it's one of the key for creating good responsive design. I also want to learn more about accessibility and the various ways we can tweak our designs to improve the experience of the few as much as the many.
+I wished to keep practicing using ems, rems and view units because in my mind it's one of the keys for creating good responsive design. I also want to learn more about accessibility and the various ways we can tweak our designs to improve the experience of the few as much as the many.
 
 ### Useful resources
 
